@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  overscroll-behavior: none;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+  touch-action: manipulation;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.up-profile-msg-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 4px 12px;
+  background: #0066FF;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.up-profile-msg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  width: max-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.up-profile-msg-text {
+  font-size: 13px;
+  font-weight: 300;
+  display: block;
+  width: max-content;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+
+}
+
+.up-icon {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.up-profile-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.app-location-error-container,
+.auth-error-wrapper {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.342);
+  z-index: 1000;
+}
+
+.app-location-error {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background: white;
+  padding: 20px 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: popup 0.3s ease-in-out 1;
+}
+
+.app-retry-btn {
+  background: #0066FF;
+  color: white;
+  padding: 8px 12px;
+  width: max-content;
+  margin-left: auto;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  opacity: .8;
+  cursor: pointer;
+}
+
+.app-retry-btn:hover {
+  opacity: 1;
+}
+
+.aa-wr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+
+
+}
+.outlet{
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+}
+.wrapper-main-container {
+  width: 100%;
+
+
+}
+@media (max-width:650px){
+  .aa-wr {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: white;
+  
+  
   }
 }

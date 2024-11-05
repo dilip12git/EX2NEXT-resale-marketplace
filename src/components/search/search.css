@@ -1,0 +1,70 @@
+.search-result-container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+}
+
+.search-result-item {
+    padding: 15px 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-bottom: 1px solid whitesmoke;
+
+}
+
+.search-result-item:hover {
+    background: whitesmoke;
+}
+
+.search-result-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+.search-result-poster{
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    border-radius: 8px;
+}
+.search-result-img {
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur();
+    border-radius: 8px;
+    border-radius: 10px;
+}
+
+.search-result-price {
+    font-size: 17px;
+    font-weight: 500px;
+    color: black;
+}
+
+.search-result-title {
+    font-size: 15px;
+    font-weight: 500px;
+    color: #0066FF;
+
+}
+
+.search-result-address {
+    font-size: 11px;
+    color: grey;
+    text-wrap: wrap;
+}
+
+.search-query {
+    color: grey;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 15px 0px;
+}

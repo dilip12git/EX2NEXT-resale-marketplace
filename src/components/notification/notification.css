@@ -1,0 +1,113 @@
+.notification-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8px 12px;
+}
+
+.notification-item
+ {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    border-bottom: 1px solid whitesmoke;
+    padding: 12px 0px;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.notification-user-profile-img,
+.notification-img-wrapper
+
+ {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.notification-info,
+.notification-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: -2px;
+
+}
+
+.notification-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+}
+
+.notification-desc {
+    color: grey;
+    font-size: 11px;
+
+}
+
+.notification-date {
+    color: #0066FF;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.notification-icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    width: max-content;
+    gap: 10px;
+}
+.v-icon{
+    cursor: pointer;
+}
+/* skeleton */
+.skeleton-notification-title{
+    width: 150px;
+    height: 15px;
+    border-radius: 5px;
+
+}
+.skeleton-notification-desc{
+    width: 200px;
+    height: 10px;
+    border-radius: 5px;
+}
+.skeleton-title{
+    border-radius: 5px;
+}
+.skeleton-notification-date{
+    width: 80px;
+    height: 8px;
+    border-radius: 5px;
+}
+.skeleton-icon{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.notification-contact-details{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    width: max-content;
+}
+.notification-btn{
+    background: transparent;
+    color: grey;
+    border: none;
+    outline: none;
+    cursor: pointer;
+   
+}
+.notification-btn:hover{
+    color: #0066FF;
+}

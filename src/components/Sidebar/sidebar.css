@@ -1,0 +1,127 @@
+.sidebar-container {
+    width: fit-content;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 8px 12px;
+    /* border-right: 1px solid whitesmoke; */
+    background-color: white;
+    position: sticky;
+    top: 0.01px;
+}
+
+.sidebar-item-for-notify-icon {
+    position: relative;
+}
+
+.sidebar-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+    user-select: none;
+    -webkit-tap-highlight-color: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: grey;
+
+
+}
+
+@media (max-width:650px) {
+    .site-logo{
+        display: none !important;
+    }
+    .sidebar-container {
+        position: fixed;
+        bottom: 0 !important;
+        width: 100%;
+        height: max-content;
+        left: 0;
+        right: 0;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 4px 0px;
+        gap: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-evenly;
+        flex-direction: row;
+        backdrop-filter: blur(8px) saturate(180%);
+        -webkit-backdrop-filter: blur(8px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.75);
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        z-index: 199;
+        align-self: flex-end;
+
+
+    }
+    .sidebar-item-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        cursor: pointer;
+        transition: ease-in-out .2s;
+        user-select: none;
+        -webkit-tap-highlight-color: none;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: grey;
+        padding: 8px 0px;
+    
+    
+    }
+    .sidebar-item{
+        font-size: 10px;
+    }
+    .s-icon {
+        font-size: 20px;
+    }
+}
+
+.sidebar-item-container.active-link {
+    color: #0066ff;
+}
+
+.sidebar-item-container:hover {
+    color: #0066ff;
+}
+
+.s-icon {
+    font-size: 26px;
+}
+
+.sidebar-item {
+    font-size: 12px;
+    text-wrap: nowrap;
+}
+
+.notify-icon {
+    background: red;
+    color: white;
+    min-width: 10px;
+    max-width: 15px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    margin-left: auto;
+    right: -2px;
+    cursor: pointer;
+    padding: 2px;
+
+}
+
+.sidebar-logo {
+    width: 50px;
+}

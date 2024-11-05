@@ -1,0 +1,367 @@
+.h-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background: white;
+    gap: 10px;
+    /* border-bottom: 1px solid whitesmoke; */
+   
+    
+}
+.user-icon{
+    font-size: 26px;
+    color: #0066FF;
+}
+.auth-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.auth-user-profile-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.header-side-menu-container {
+    position: absolute;
+    right: 8px;
+    margin-top: 5px;
+    width: 250px;
+    height: max-content;
+    border-radius: 8px;
+    padding: 12px;
+    background: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(0);
+    transform-origin: top right;
+    transition: transform  ease-in-out 0.2s; 
+    
+}
+.user-profile-card{
+    border-radius: 8px;
+    padding: 8px 12px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.menu-profile{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    color: black;
+    font-size: 15px;
+    padding: 12px 0px;
+    border-bottom: 1px solid whitesmoke;
+    
+}
+
+.profile-see-all-profile{
+    color: #0066FF;
+    font-size: 14px;
+    cursor: pointer;
+}
+.menu-items-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 0px;
+    cursor: pointer;
+}
+.menu-item:hover{
+    color: #0066FF;
+}
+.header-side-menu-container.open {
+    transform: scale(1); 
+    
+}
+.menu-user-logout{
+    border-top: 1px solid whitesmoke;
+}
+.menu-user-logout:hover{
+    color: red !important;
+
+}
+.location-icon {
+    color: #0066FF;
+}
+
+.logo-and-location-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.h-sidebar-item-container{
+    display: none;
+    width: 35px;
+}
+.h-sidebar-logo{
+    width: 35px;
+}
+@media (max-width:650px){
+    .h-sidebar-item-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 15px;
+    user-select: none;
+    -webkit-tap-highlight-color: none;
+}
+
+.main-city-name-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    font-weight: bold;
+}
+
+.city-name {
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.full-address-container {
+    max-width: 200px;
+    text-wrap: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 200;
+    font-size: 11px;
+    color: rgb(145, 145, 145);
+    text-transform: capitalize;
+}
+
+
+.searchbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    z-index: 1;
+
+}
+
+.close-search-bar {
+    display: none;
+    color: #0066FF;
+    font-size: 26px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.header-search-icon {
+    display: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    border: 1px solid whitesmoke;
+    padding: 0px 12px;
+    width: 400px;
+    border-radius: 8px;
+    background: transparent;
+}
+
+.search-icon {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: ease-in-out .3s;
+}
+
+.search-icon:hover {
+    color: #0066FF;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 8px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: medium;
+}
+
+::placeholder {
+    color: grey;
+    font-size: 14px;
+}
+
+.user-profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 4px 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+    user-select: none;
+    -webkit-tap-highlight-color: none;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    background: #0066FF;
+}
+
+
+
+.user-profile-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+.uers-icon {
+    font-size: 30px;
+}
+
+
+.sign-btn {
+    color: #0066FF;
+}
+
+.notify-icon{
+    background: red;
+    color: white;
+    min-width: 10px;
+    max-width: 15px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    margin-left: auto;
+    right: -2px;
+    cursor: pointer;
+    padding: 2px;
+
+}
+
+
+/* tablet  view */
+@media (max-width:768px) {
+
+    .nav {
+        flex-direction: column-reverse;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        min-width: max-content;
+        gap: 0px;
+
+    }
+
+    .close-search-bar {
+        display: flex;
+    }
+
+    .header-search-icon {
+        display: flex;
+    }
+
+    .searchbar {
+        width: 100%;
+
+    }
+
+    .header-side-menu-container {
+        margin-top: 15px;
+        right: -4px;
+
+    }
+
+    .searchbar-container {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: -10%;
+        background: white;
+        padding: 8px 12px;
+        transition: ease-in-out .3s;
+    }
+
+
+    .searchbar-container.show {
+        top: 0%;
+    }
+ 
+}
+
+@media (max-width:1150px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-and-location-wrapper {
+        width: 100%;
+        justify-content: flex-start;
+
+
+    }
+
+    .nav {
+        min-width: max-content;
+    }
+
+    .searchbar-container {
+        background: white;
+
+
+    }
+
+}
