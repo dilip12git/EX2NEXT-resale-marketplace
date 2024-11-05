@@ -33,9 +33,8 @@
    git clone https://github.com/dilip12git/EX2NEXT-resale-marketplace.git
    cd EX2NEXT-resale-marketplace
 ## Screenshots
-![Screenshot (25)](https://github.com/user-attachments/assets/1fe6ca05-b5ec-425a-a8![Screenshot (26)](https://github.com/user-attachments/assets/d081d14f-3771-4ba5-84aa-2db00c6e7095)
-b9-85f3a1c24b62)
 
+![Screenshot (25)](https://github.com/user-attachments/assets/3ca26f59-0760-4d8c-9a7b-a704af808845)
 
 ![Screenshot (26)](https://github.com/user-attachments/assets/56d11dfd-b395-4895-9cc7-f7f896e4f2b3)
 
