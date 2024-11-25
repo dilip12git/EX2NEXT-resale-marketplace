@@ -1,5 +1,5 @@
 import CryptoJS from 'crypto-js';
-const secretKey = "ex2nextSecretKey@0123";
+const secretKey = "your-secret-key"
 
 const CryptoService = {
   

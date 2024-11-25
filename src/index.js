@@ -13,7 +13,7 @@ import { AuthProvider } from './components/contexts/AuthContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GoogleOAuthProvider clientId="124318200379-dcfbiil6t8dpiub36pgd8mgsjtp6cs99.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="YOUR-GOOGLE-CLIENT-ID">
       <ToastService>
         <LocationProvider>
           <AuthProvider>
