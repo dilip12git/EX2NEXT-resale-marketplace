@@ -49,7 +49,6 @@ app.use('/users/chats', MarkMsgSeen);
 
 const BASE_URL = 'http://localhost:3001/chat';
 
-// Set up storage for multer
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     const userId = req.body.senderId; 
